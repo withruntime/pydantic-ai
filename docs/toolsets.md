@@ -991,6 +991,7 @@ Toolsets for file operations help agents read, write, and edit files:
 Toolsets for sandboxed code execution help agents run code in a sandboxed environment:
 
 * [`mcp-run-python`](https://github.com/pydantic/mcp-run-python) - MCP server by the Pydantic team that runs Python code in a sandboxed environment. Can be used as `MCPToolset(StdioTransport(command='uv', args=['run', 'mcp-run-python', 'stdio']))`.
+* [`pydantic-ai-withruntime`](https://pypi.org/project/pydantic-ai-withruntime/) - `RuntimeToolset` gives each agent run its own [Runtime](https://withruntime.com) sandbox, a Firecracker microVM, with shell, file and listing tools, and stops it when the run ends.
 
 ### LangChain Tools {#langchain-tools}
 
